@@ -1,0 +1,23 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "Express Backend",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "uuid": "^8.3.1",
+    "@prisma/client": "^3.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14",
+    "prisma": "^3.3.0"
+  },
+  "author": "Ha Thanh Tam",
+  "license": "ISC"
+}

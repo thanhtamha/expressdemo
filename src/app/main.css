@@ -1,0 +1,1265 @@
+/*Set link text to transparent [Solve border at button image]*/
+a:link {
+	color: transparent;
+}
+a:visited {
+	color: transparent;
+}
+a:hover {
+	color: transparent;
+}
+a:active {
+	color: transparent;
+}
+
+/* HTML CSS RESET */
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+table,
+tbody,
+th,
+tr {
+	width: 100%;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+}
+td {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+	/*vertical-align:top;*/
+}
+
+img.bg {
+	min-width: 100%;
+}
+
+html {
+	height: 100%;
+	min-height: 100%;
+	margin: 0;
+}
+
+body {
+	min-height: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background-color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; /* IE 6+, FF 7+, Op 11+, Saf 1.3+, Chr 1+ */
+	-o-text-overflow: ellipsis; /* for Opera 9 & 10 */
+}
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+.pageWrapper {
+	height: 100%;
+	text-align: center;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+.opacityPage {
+	height: 100%;
+	background-color: transparent;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+
+.headerSection {
+	height: 98px;
+	background-color: #ffc700;
+	/*background: url('../Images/General/header_maybank.png') no-repeat 100%;*/
+}
+
+.topHeaderSection {
+	float: left;
+	height: 61px;
+	width: 100%;
+	z-index: 99;
+	position: relative;
+	overflow: hidden;
+}
+
+.bottomHeaderSection {
+	float: left;
+	height: 38px;
+	width: 100%;
+	z-index: 99;
+	position: relative;
+}
+
+.headerBgImg {
+	max-height: 100px;
+	min-width: 720px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+
+.center {
+	text-align: center;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.headerTitle {
+	font-size: 13pt;
+	position: absolute;
+	top: 70px;
+	left: 43%;
+	z-index: 100;
+	color: rgb(211, 211, 211);
+}
+
+.contentSection {
+	/*min-height: 350px;*/
+	height: 100%;
+	text-align: center;
+	background-color: transparent;
+}
+
+.contentSectionFixed {
+	position: fixed;
+	/*top: 40px;     */
+	left: 0px;
+	width: 100%;
+}
+
+.contentSectionWeb {
+	/*top: 40px;     */
+	left: 0px;
+	width: 100%;
+}
+
+.inner-wrap {
+	height: auto;
+	overflow: hidden;
+	width: auto;
+	padding: 20px 15px 20px 15px;
+}
+
+.dashboard {
+	float: none; /* not needed, just for clarification */
+	/* the next props are meant to keep this block independent from the other floated one */
+	width: auto;
+	overflow: hidden;
+}
+
+table.portfolio {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	border: 0;
+	border-spacing: 0;
+}
+
+div.portfolio {
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.cell {
+	display: table-cell;
+}
+
+#portfolio-content {
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	-webkit-border-bottom-right-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	border: 1px solid #cccccc;
+	/*    background: url("../Images/Portfolio/gradient-bottom.png") bottom left repeat-x;*/
+}
+
+.profile {
+	width: 286px;
+	margin-left: 15px;
+}
+
+#welcomeProfile {
+	background: url('../Images/Portfolio/Welcome/side_dark.png') top center
+		no-repeat;
+	min-height: 224px;
+}
+
+.main-header {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	max-height: 45px;
+	min-height: 45px;
+	position: relative;
+}
+.main-hdr {
+	max-height: 45px;
+	min-height: 45px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	background-size: 100%;
+	position: absolute;
+	box-shadow: 1px 1px 2px #888888;
+}
+
+.arrow {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* Chart */
+#portfolio-chart {
+	overflow: hidden;
+	width: 290px;
+	min-height: 300px;
+}
+.chart-bg {
+	background: url('../Images/Portfolio/chart_bg_full.png') no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+#chart-container {
+	overflow: hidden;
+	position: relative;
+}
+
+.slide-trigger {
+	height: 100%;
+	width: 20px;
+	margin-right: 10px;
+	position: absolute;
+	right: 0;
+}
+/* Account */
+#portfolio-account {
+}
+
+.shadow-left {
+	background: url('../Images/Portfolio/shadow_left.png') top left repeat-y;
+	position: absolute;
+	width: 10px;
+}
+
+/* Footer Section */
+.footerSection {
+	height: 72px;
+	width: 100%;
+	position: fixed;
+	bottom: 0pt;
+	left: 0pt;
+	margin-bottom: -53px;
+	background-color: transparent;
+}
+
+.footerMenubarTitle {
+	height: 30px;
+	padding: 0;
+}
+
+.footerMenubar {
+	width: 80%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -70px;
+}
+
+.menuTitleButton {
+	/*height: 20px;   */
+	height: 30px;
+	margin-top: -8px;
+}
+
+.menuButton {
+	padding: 3px 3px 3px 3px;
+	margin-top: 2px;
+	height: 42px;
+}
+
+.footerMenubarBgImg {
+	height: 70px;
+	width: 80%;
+	margin-top: -12px;
+}
+
+.footerMenubarSubMain {
+	display: none;
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	bottom: 85px;
+	left: -18%;
+}
+
+.footerSubMenubarBgImg {
+	height: 75px;
+	width: 192px;
+}
+
+.footerSubMenubar {
+	margin-top: -75px;
+}
+
+/*block user to access background action*/
+#overlay {
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200%;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	z-index: 100;
+}
+
+/* back menu */
+.backButtonWrapper {
+	height: 40px;
+	text-align: left;
+	z-index: 100;
+	position: absolute;
+	top: 67px;
+	left: 10px;
+}
+
+.backButton {
+	height: 27px;
+}
+
+.backCaption {
+	position: absolute;
+	margin-top: 7px;
+	margin-left: 14px;
+	color: #ffffff;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+.logoutButtonWrapper {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	z-index: 100;
+	top: 3px;
+	right: 10px;
+}
+
+.logoutbuttonWrapper2 {
+}
+
+.logoutbutton {
+}
+
+.button {
+	border: 0px;
+	font-size: 11pt;
+	font-weight: bold;
+	color: #5f5f5f;
+}
+.btnLogout {
+	background: url('../Images/General/btn_logout.png');
+	width: 82px;
+	height: 38px;
+}
+
+.logoutCaption {
+	margin-top: -40px;
+	/*margin-right: 8px;*/
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 8pt;
+	background-color: transparent;
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 55px;
+	text-align: center;
+}
+
+/* load more */
+.loadMoreButton {
+	height: 15px;
+	vertical-align: middle;
+}
+
+/* Menu Task Size*/
+.menuTaskSizeDiv {
+	background-image: url('../Images/Task/bg_notification@2x.png');
+	background-size: 100% 100%;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	display: none;
+	width: 30px;
+	height: auto;
+	min-height: 16px;
+	bottom: 33px;
+	margin-left: 7%;
+}
+
+.menuTaskSize {
+	color: #ffffff;
+	text-align: center;
+	width: 100%;
+	font-size: 7pt;
+	font-weight: normal;
+	display: block;
+	padding-top: 2px;
+}
+
+.lay {
+	background-color: #000;
+	color: #ffffff;
+	text-align: center;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	vertical-align: middle;
+	overflow: visible;
+}
+
+.pageTitle {
+	margin: 7px auto;
+}
+.pageTitle h1 {
+	font-size: 14pt;
+	font-weight: bold;
+	color: #bbbbbb;
+}
+
+/*#dvLoading
+{
+   background:#000 url('../Images/General/loader.gif') no-repeat center center;
+   height: 100px;
+   width: 100px;
+   position: fixed;
+   z-index: 1000;
+   background-color: transparent;
+   left: 50%;
+   top: 50%;
+   margin: -25px 0 0 -25px;
+}*/
+/***********************************************
+        Account List
+***********************************************/
+div#account-list {
+}
+
+div#account {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+tr.header1 {
+	background: #cccccc;
+	text-align: right;
+}
+td.header1 {
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 4px 8px 4px 4px;
+}
+.border-right {
+	border-right: 1px #5f5f5f solid;
+}
+
+#chart {
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-bottom-left-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomleft: 7px;
+}
+
+.account-right-border {
+	border-right: 1px solid #ccc;
+}
+
+/************************************************************************
+/   Portfolio Detail
+/************************************************************************/
+/* Account Header Section */
+.accountHeaderSection {
+	width: 100%;
+	text-align: left;
+	font-size: 10pt;
+	background: url('../Images/Portfolio/Detail/bg_carbon_small.png') repeat;
+	color: white;
+}
+
+.accountHeaderTable {
+	height: 100%;
+}
+
+.colPadding {
+	width: 1%;
+}
+
+.accountTypeHeader {
+	width: 55%;
+	margin-left: 10px;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 11pt;
+}
+
+.accountTypeTotal {
+	width: 43%;
+	margin-right: 10px;
+	text-align: right;
+	vertical-align: middle;
+	font-size: 10pt;
+}
+
+.companySection {
+	display: block;
+	text-align: left;
+	vertical-align: middle;
+	color: white;
+	padding: 15px 20px 15px 20px;
+}
+
+.accountWrapper {
+	display: block;
+	text-align: left;
+	vertical-align: middle;
+	overflow-x: auto;
+	overflow-y: hidden;
+	color: #000000;
+}
+
+.orgDiv {
+	font-size: 11pt;
+}
+
+.dateDiv {
+	font-size: 9pt;
+}
+
+.accountHeader {
+	font-size: 10pt;
+}
+
+.productCard {
+	display: inline;
+	float: left;
+	height: 92px;
+	background: url('../Images/Portfolio/Detail/card_deposit_off.png') no-repeat;
+}
+.productDetail {
+	padding: 15px 20px 10px 20px;
+}
+.productDetail .title {
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.smallFont {
+	font-size: 0.75em;
+}
+.medFont {
+	font-size: 0.85em;
+}
+
+.grey {
+	color: #898989;
+}
+.active .grey {
+	color: #ffffff !important;
+}
+
+.active {
+	color: #ffffff !important;
+}
+.productCard.slim {
+	height: 55px !important;
+}
+.productCard.deposit {
+	width: 310px;
+	background: url('../Images/Portfolio/Detail/card_deposit_off.png') no-repeat;
+}
+.productCard.deposit.active {
+	background: url('../Images/Portfolio/Detail/card_deposit_on.png') no-repeat !important;
+}
+.productCard.deposit.slim {
+	width: 310px;
+	background: url('../Images/Portfolio/Detail/card_deposit_off_thin.png')
+		no-repeat;
+}
+.productCard.deposit.slim.active {
+	background: url('../Images/Portfolio/Detail/card_deposit_on_thin.png')
+		no-repeat !important;
+}
+
+.productCard.liabilities {
+	width: 270px;
+	background: url('../Images/Portfolio/Detail/card_liabilities_off.png')
+		no-repeat;
+}
+.productCard.liabilities.active {
+	background: url('../Images/Portfolio/Detail/card_liabilities_on.png')
+		no-repeat !important;
+}
+.productCard.liabilities.slim {
+	width: 270px;
+	background: url('../Images/Portfolio/Detail/card_liabilities_off_thin.png')
+		no-repeat;
+}
+.productCard.liabilities.slim.active {
+	background: url('../Images/Portfolio/Detail/card_liabilities_on_thin.png')
+		no-repeat !important;
+}
+
+.productCard.investment {
+	width: 270px;
+	background: url('../Images/Portfolio/Detail/card_investment_off.png')
+		no-repeat;
+}
+.productCard.investment.active {
+	background: url('../Images/Portfolio/Detail/card_investment_on.png') no-repeat !important;
+}
+.productCard.investment.slim {
+	width: 270px;
+	background: url('../Images/Portfolio/Detail/card_investment_off_thin.png')
+		no-repeat;
+}
+.productCard.investment.slim.active {
+	background: url('../Images/Portfolio/Detail/card_investment_on_thin.png')
+		no-repeat !important;
+}
+
+.productCard.trade {
+	width: 270px;
+	background: url('../Images/Portfolio/Detail/card_trade_off.png') no-repeat;
+}
+.productCard.trade.active {
+	background: url('../Images/Portfolio/Detail/card_trade_on.png') no-repeat !important;
+}
+.productCard.trade.slim {
+	width: 270px;
+	background: url('../Images/Portfolio/Detail/card_trade_off_thin.png')
+		no-repeat;
+}
+.productCard.trade.slim.active {
+	background: url('../Images/Portfolio/Detail/card_trade_on_thin.png') no-repeat !important;
+}
+
+.productCard.otherbank {
+	width: 270px;
+	background: url('../Images/Portfolio/Detail/card_otherbank_off.png') no-repeat;
+}
+.productCard.otherbank.active {
+	background: url('../Images/Portfolio/Detail/card_otherbank_on.png') no-repeat !important;
+}
+.productCard.otherbank.slim {
+	width: 270px;
+	background: url('../Images/Portfolio/Detail/card_otherbank_off_thin.png')
+		no-repeat;
+}
+.productCard.otherbank.slim.active {
+	background: url('../Images/Portfolio/Detail/card_otherbank_on_thin.png')
+		no-repeat !important;
+}
+
+.productSlider {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.portfolioContainer {
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	/*    background: url("../Images/Portfolio/Detail/gradient-bottom.png") bottom left repeat-x;*/
+}
+
+.portfolioLeft {
+	position: relative;
+	width: 30%;
+	height: 100%;
+	float: left;
+	background-color: aliceblue;
+}
+
+.portfolioRight {
+	position: relative;
+	width: 70%;
+	height: 100%;
+	float: left;
+	background-color: antiquewhite;
+	/*overflow-y: auto;*/
+}
+
+.portfolioDetail {
+	position: relative;
+	width: 70%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	background: #dddddd;
+}
+#portfolioContainer {
+	text-align: left;
+	height: 100%;
+	background-color: gray;
+}
+#portfolioContainer .small-title {
+	background: #555555;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10pt;
+	padding: 5px;
+}
+table#productAccount {
+	table-layout: fixed;
+}
+
+#productAccount tr.active {
+	background: #ffc600;
+}
+#productAccount td {
+	padding: 5px;
+}
+
+table.accountList {
+	table-layout: fixed;
+	border-collapse: collapse;
+	color: #444444;
+	font-size: 1em;
+}
+tbody#accountList div.top {
+	padding-top: 5px;
+	padding-left: 15px;
+}
+tbody#accountList div.bottom {
+	padding-bottom: 5px;
+	padding-left: 15px;
+}
+tbody#accountList tr {
+	border-bottom: 1pt solid #aaaaaa;
+}
+tbody#accountList td {
+	padding: 4px 4px 4px 13px;
+}
+
+.rowEven {
+	background-color: rgb(243, 243, 243);
+}
+
+table.account-detail {
+	table-layout: fixed;
+	border-collapse: collapse;
+	color: #444444;
+}
+
+.account-detail tr.account-header {
+	background: #444444;
+	color: #ffffff;
+	font-size: 0.8em;
+}
+.account-detail tr.account-header td {
+	padding: 13px 10px;
+}
+
+.account-detail tr td {
+	padding: 10px 20px;
+}
+
+.noRecordFound {
+	width: 100%;
+	font-size: 14pt;
+	font-weight: bold;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+	display: block;
+}
+
+.block2 {
+	display: inline-block;
+	width: 40%;
+	padding: 10px 20px;
+}
+.block3 {
+	display: inline-block;
+	width: 32%;
+	vertical-align: middle;
+	padding: 10px 0 10px 0;
+}
+.detail-hr {
+	height: 2px;
+	width: 100%;
+	display: block;
+	background: url('../Images/Portfolio/Detail/content_div.png') left bottom
+		repeat-x;
+}
+.detailWrapper {
+	padding: 10px 10px 10px 30px;
+}
+
+.btnTranchDet {
+	border: 0;
+	width: 110px;
+	height: 30px;
+	background: url('../Images/Portfolio/Detail/btn_tranchdetails.png');
+}
+.btnTranchDet:hover,
+.btnTranchDet.active {
+	background: url('../Images/Portfolio/Detail/btn_tranchdetailsActive.png');
+}
+
+.fd-detail {
+	background: #ffffff;
+}
+/**** Today Inquiry ****/
+
+.companySelection {
+	border: 0;
+	text-align: left;
+	font-size: 19px;
+	font-weight: bold;
+	color: #fcfcfc;
+	line-height: 2.4;
+	padding-left: 10px;
+	text-shadow: 1px 1px #555555;
+}
+.companySelection select {
+	-webkit-appearance: none !important; /*Removes default chrome and safari style*/
+	-moz-appearance: none; /*Removes default style Firefox*/
+	appearance: none;
+	background: transparent;
+	border: 0 !important; /*Removes border*/
+}
+.companySelection option {
+	color: #000000;
+	/*background: #AAAAAA;*/
+	/*border-right:2px solid #333333 ;*/
+	/*border-bottom:2px solid #333333 ;*/
+}
+
+/*----Rate-----------*/
+.ratesBox {
+	display: none;
+	position: fixed;
+	z-index: 200;
+	top: 50%;
+	left: 35%;
+	margin: -150px 0 0 -150px;
+	width: 580px;
+	height: 280px;
+}
+.ratesHeaderBgImg {
+	width: 100%;
+	height: 90%;
+	border: 0px;
+}
+.ratesHeader {
+	position: absolute;
+	margin-top: -240px;
+	margin-left: 38px;
+	font-size: 14pt;
+	font-weight: bold;
+}
+.ratesContent {
+	background-color: transparent;
+	margin-top: -198px;
+	width: 100%;
+}
+
+.btnCloseDivRate {
+	margin-top: -80px;
+	margin-left: 556px;
+}
+.btnCloseBgImgRate {
+	width: 25px;
+}
+
+.ratesContent1 {
+	width: 450px;
+	top: 41%;
+	left: 26%;
+	position: fixed;
+}
+
+.ratesIcon {
+	left: 28%;
+	height: 65px;
+	position: fixed;
+	top: 46%;
+}
+
+.divExchangeRates {
+	left: 43%;
+	position: fixed;
+	top: 46%;
+	font-weight: bold;
+}
+
+.divSelect {
+	left: 43%;
+	position: fixed;
+	top: 51%;
+}
+
+.divSelectField {
+	border: 0px;
+	width: 210px;
+	line-height: 22px;
+	font-size: 15pt;
+}
+/*----End Rate-----*/
+/*----ContactUs------*/
+
+.countryButtonWrapper {
+	width: 270px;
+	/*width:inherit;*/
+	/*position:fixed;*/
+	margin-bottom: 10px;
+	overflow-x: auto;
+}
+
+.countryButton {
+	display: inline-block;
+	width: 40px;
+	min-width: 40px;
+	height: auto;
+}
+
+.countryButton img {
+	max-width: 100%;
+	height: auto;
+}
+
+.contactSectionDiv {
+	background: url('../Images/ContactUs/bg_contactus@2x.png');
+	overflow: auto;
+	position: relative;
+
+	width: 240px;
+	height: 219px;
+
+	border-radius: 9px;
+	z-index: 999;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: 48.235%;
+}
+
+.contactInfoArea {
+	margin: 0 auto;
+	min-width: 150px;
+	/*max-width: 268px;*/
+	height: auto;
+	text-align: left;
+	font-size: 10pt;
+	overflow: visible;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+.contactTextBold {
+	width: auto;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+.contactTextNormal {
+	width: auto;
+	color: #eeeeee;
+	text-align: left;
+}
+
+.city {
+	font-size: 10pt;
+	color: #e3b207;
+	font-weight: bold;
+}
+
+.telTextBig1 {
+	width: auto;
+	color: #ffffff;
+	font-size: 12pt;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.telTextBig2 {
+	width: auto;
+	color: #ffffff;
+	font-size: 11pt;
+	padding: 3px;
+}
+
+.telTextSmall {
+	width: auto;
+	color: #eeeeee;
+	font-size: 8.5pt;
+	/*text-align:left;*/
+	padding: 3px;
+}
+
+.telTextSmall2 {
+	width: auto;
+	color: #eeeeee;
+	font-size: 9pt;
+	/*text-align:left;*/
+	padding: 3px;
+}
+
+.telTextBig3 {
+	width: auto;
+	color: #ffffff;
+	font-size: 11pt;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.emailButton {
+	text-align: center;
+	padding: 5px 10px 5px 10px;
+	/* override default button style */
+	border: 0;
+	background-image: url('../Images/ContactUs/btn_rounded@2x.png');
+	background-color: transparent;
+	color: #ffffff;
+	/*full size image button*/
+	background-size: 100% 100%;
+	color: #1c68c4;
+}
+
+.emailButton p {
+	font-weight: bold;
+	font-size: 10pt;
+	/* center */
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.telephoneNumberArea {
+	text-align: right;
+	height: auto;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.telephoneNumberArea img {
+	width: 100%;
+	height: auto;
+	max-width: 50px;
+}
+
+.telNumber {
+	display: inline-block;
+	width: 70%;
+	text-align: left;
+}
+
+.telNumber2 {
+	display: inline-block;
+	width: 77%;
+	text-align: left;
+}
+
+.bottomSection {
+	float: left;
+	width: 100%;
+	min-height: 140px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.div1 {
+	position: relative;
+	color: rgb(255, 255, 255);
+	font-size: 11pt;
+	text-align: center;
+	z-index: 999;
+	margin-right: 196px;
+	margin-left: auto;
+	margin-top: -581px;
+}
+
+.div2 {
+	overflow-x: auto;
+	position: relative;
+	z-index: 999;
+	margin-right: 48.235%;
+	margin-left: auto;
+	margin-top: 15px;
+	width: 240px;
+}
+
+.imageDiv {
+	position: relative;
+	/*bottom: 17.5%;*/
+	width: 100%;
+	height: 380px;
+	left: auto;
+	right: -22%;
+	margin-top: -578px;
+	margin-left: 2px;
+}
+
+.popContent {
+	position: relative;
+	width: 100%;
+	height: 380px;
+	margin-top: 241px;
+	left: 22%;
+	margin-left: 106px;
+}
+
+.contactPopBox {
+	margin-top: 100px;
+	margin-right: -2%;
+	margin-left: auto;
+}
+/*--- End ContactUs----*/
+.overlay2 {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 200%;
+	background-color: rgba(0, 0, 0, 0);
+	position: fixed;
+	z-index: 100;
+	display: none;
+}
+/*----back menu--------*/
+.breaker {
+	/* center */
+	margin: 0 auto;
+	text-align: center;
+}
+
+.breaker img {
+	width: 100%;
+	max-width: 100%;
+	height: 2px;
+}

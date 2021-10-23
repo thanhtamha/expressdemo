@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Front Office</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, user-scalable=no"
+		/>
+		<link rel="stylesheet" href="main.css" />
+		<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<div id="pageWrapper" class="pageWrapper">
+			<div id="headerSection" class="headerSection"></div>
+
+			<div id="contentSection" class="contentSection contentSectionFixed">
+				<div id="portfolioContainer" class="portfolioContainer">
+					<div
+						id="portfolioLeft"
+						class="portfolioLeft"
+						onclick="accountTypeClick();"
+					>
+					</div>
+
+					<div
+						id="portfolioRight"
+						class="portfolioRight"
+						onclick="detailClick();"
+					>
+					</div>
+
+					<div id="portfolioDetail" class="portfolioDetail"> </div>
+
+					<div class="clearBoth"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
