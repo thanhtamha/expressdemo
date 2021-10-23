@@ -24,6 +24,15 @@ const prisma = new PrismaClient();
 //   take: pageSize,
 // });
 
+// Example
+// URL -> http://localhost:3001/user/saveUser
+// Body -> {
+//   "username": "ttha",
+//   "password": "123",
+//   "fullName": "Ha Thanh Tam",
+//   "emailAdd": "hathanhtam.03@gmail.com"
+// }
+
 router.post("/saveUser", async (req, res) => {
   const data = req.body;
 
