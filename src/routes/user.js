@@ -7,6 +7,52 @@ const { getNewOtp } = require("../utils");
 // Model Data
 const { v4: uuid } = require("uuid");
 
+const { PrismaClient } = require("@prisma/client");
+const prisma = new PrismaClient();
+
+// Sample DAO
+// Select -> await prisma['user'].findUnique({ where: { id: userId } });
+// Save -> const dataObj = await prisma['user'].create({ data: addData });
+// Update -> const dataObj = await prisma['user'].update({where: { id: data.id }, data: updData});
+// Delete -> const dataObj = await prisma['user'].delete({ where: { id: dataId } });
+
+// Search ->
+// const searchResults = await prisma['user'].findMany({
+//   where: query,
+//   orderBy: sort,
+//   skip: pageSize * (pageNo - 1),
+//   take: pageSize,
+// });
+
+router.post("/saveUser", async (req, res) => {
+  const data = req.body;
+
+  try {
+    console.log("Request -> ", data);
+
+    let newUser = {
+      id: uuid(),
+      username: data.username,
+      password: data.password,
+
+      fullName: data.fullName,
+      emailAdd: data.emailAdd,
+      dtUpdate: new Date(),
+    };
+
+    const dataObj = await prisma["user"].create({ data: newUser });
+    const response = {
+      detail: dataObj,
+    };
+
+    console.log("Response -> ", response);
+
+    res.json(response);
+  } catch (error) {
+    console.log("Error -> ", error);
+  }
+});
+
 router.post("/apiUser", async (req, res) => {
   const data = req.body;
   const response = {
