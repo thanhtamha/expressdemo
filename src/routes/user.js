@@ -11,7 +11,7 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 // Sample DAO
-// Select -> await prisma['user'].findUnique({ where: { id: userId } });
+// Select -> const dataObj = await prisma['user'].findUnique({ where: { id: userId } });
 // Save -> const dataObj = await prisma['user'].create({ data: addData });
 // Update -> const dataObj = await prisma['user'].update({where: { id: data.id }, data: updData});
 // Delete -> const dataObj = await prisma['user'].delete({ where: { id: dataId } });
