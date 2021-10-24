@@ -1,7 +1,7 @@
 const path = require("path");
 const express = require("express");
 
-const { Config } = require("./configs");
+const { Config, Constant } = require("./configs");
 
 // 1. Init express
 const app = express();

@@ -1,4 +1,10 @@
 require("dotenv").config();
+const Constant = {
+  // Pagination
+  pageSize: 10,
+  sortAsc: "asc",
+  sortDesc: "desc",
+};
 
 const Config = {
   APP_PORT: process.env.APP_PORT || 3001,
@@ -9,4 +15,4 @@ const Config = {
   MONGO_URL: process.env.MONGO_URL,
 };
 
-module.exports = { Config };
+module.exports = { Config, Constant };
